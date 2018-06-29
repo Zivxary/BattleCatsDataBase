@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>喵咪大戰爭DataBase</title>
+		<script type="text/javascript" src="lib/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="lib/sorttable.js"></script>
+		<link rel=stylesheet type="text/css" href="lib/table.css">
+		<script type="text/javascript" src="lib/filter.js"></script>
+	<body>
+		<table id="ftable" border="2" class="nhide">
+			<thead>
+				<tr>
+					<th colspan="2" align="center">篩選</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td align="center">找貓</td>
+					<td>
+						<INPUT TYPE="text" ID="findtext" width="200px">
+					</td>
+				</tr>
+				<tr>
+					<td align="center">稀有度</td>
+					<td id="trare">
+						<INPUT TYPE="checkbox" ID="irare" checked > 基本 
+						<INPUT TYPE="checkbox" ID="irare" checked > EX 
+						<INPUT TYPE="checkbox" ID="irare" checked > 稀有 
+						<INPUT TYPE="checkbox" ID="irare" checked > 激稀有 
+						<INPUT TYPE="checkbox" ID="irare" checked > 超激稀有 
+					</td>
+				</tr>
+				<tr class="behide">
+					<td align="center">屬性</td>
+					<td >
+						<table>
+							<tr>
+								<td><INPUT TYPE="checkbox" ID="iattr" checked>白敵</td>
+								<td><INPUT TYPE="checkbox" ID="iattr" checked>紅敵</td>
+								<td><INPUT TYPE="checkbox" ID="iattr" checked>黑敵</td>
+								<td><INPUT TYPE="checkbox" ID="iattr" checked>浮敵</td>
+								<td><INPUT TYPE="checkbox" ID="iattr" checked>鋼鐵敵</td>
+							</tr>
+							<tr>
+								<td><INPUT TYPE="checkbox" ID="iattr" checked>天使敵</td>
+								<td><INPUT TYPE="checkbox" ID="iattr" checked>異星敵</td>
+								<td><INPUT TYPE="checkbox" ID="iattr" checked>殭屍敵</td>
+								<td><INPUT TYPE="checkbox" ID="iattr" checked>魔女敵</td>
+								<td></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<br>
+		<table class="sortable" border=1>
+			<thead>
+				<tr id="titlecol" class="filter">
+					<th class="behide">類別</th>
+					<th class="behide crare">rare</th>
+					<th class="cra">稀有</th>
+					<th class="cid">編號</th>
+					<th class="cpic">圖片</th>
+					<th class="behide cbhp">bhp</th>
+					<th class="behide cbatk">batk</th>
+					<th class="behide caff">aff</th>
+					<th class="behide caof">aof</th>
+					<th class="behide caif">aif</th>
+					<th class="behide ciat">type</th>
+					<th class="behide ccd">cd</th>
+					<th class="behide chlv1">hlv1</th>
+					<th class="behide chlv2">hlv2</th>
+					<th class="behide cmlv1">mlv1</th>
+					<th class="behide cmlv2">mlv2</th>
+					<th class="czn">中文名</th>
+					<th class="cjn">日文名</th>
+					<th class="clv">等級</th>
+					<th class="chp">體力</th>
+					<th class="catk">攻擊</th>
+					<th class="chn">硬度</th>
+					<th class="cdps">DPS</th>
+					<th class="cafs">攻頻</th>
+					<th class="caos">攻發</th>
+					<th class="cais">間隔</th>
+					<th class="ckb">KB</th>
+					<th class="cspd">速度</th>
+					<th class="cad">射程</th>
+					<th class="csat">範圍</th>
+					<th class="cct">再生產</th>
+					<th class="cco">金額</th>
+					<th class="cch">特性</th>
+				</tr>
+			</thead>
+			<tbody id="data">
