@@ -1,4 +1,4 @@
-# BattleCatsDataBase
+# BattleCatsDataBaseTest
 
 BattleCats にゃんこ大戦争 資料庫APP
 
